@@ -28,7 +28,7 @@ public class HttpUrlChecker {
 
     static Matcher getMatcher(String httpString) {
         
-        Pattern p = Pattern.compile("^https?:\\/\\/([a-zA-Z0-9]((-)*[a-zA-Z0-9])*)(\\.[a-zA-Z0-9]((-)*[a-zA-Z0-9])*)*(\\.[a-z]+)+$");
+        Pattern p = Pattern.compile("^https?:\\/\\/([a-zA-Z0-9]((-)*[a-zA-Z0-9])*)(\\.[a-zA-Z0-9]((-)*[a-zA-Z0-9])*)*(\\.[A-Za-z]+)+$");
         return p.matcher(httpString);
     }
 
